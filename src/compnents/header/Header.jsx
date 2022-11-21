@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HeaderLogo from '../../assets/images/LogoHeader.svg'
 
 export default function Header({ setLogin }) {
 
@@ -7,8 +8,9 @@ export default function Header({ setLogin }) {
     <div>
         <div><h1>Header</h1></div>
         <div>
-                <img src="../../images/LogoHeader.svg"></img>
-             
+            <div>
+              <img src={HeaderLogo} alt="Header Logo"></img>
+            </div>           
             <div>
                 <button  onClick={() => setLogin(true)}>Карта</button>
                 <button  onClick={() => setLogin(true)}>Профиль</button>

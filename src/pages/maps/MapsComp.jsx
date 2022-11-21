@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../header/Header'
+import Header from '../../compnents/header/Header'
 
 export default function MapsComp() {
   return (

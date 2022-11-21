@@ -5,7 +5,7 @@
     justify-content: start;
     width: 100%;
     height: 100vh;
-    background-image: url(E:\LoftSchool\loft-taxi\src\images\МapSPB.jpg);
+    background-image: url(../../assets/images/МapSPB.jpg);
 }
  
 .Main-Header {  

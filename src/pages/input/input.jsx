@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import  FormInput  from '../../compnents/forms/FormInput';
 import  RegInput  from '../../compnents/forms/RegInput' ;
-import MapsComp from '../../compnents/maps/MapsComp'
+// import MapsComp from '../maps/MapsComp'
 
 
 import logo from '../../images/logo.svg'
