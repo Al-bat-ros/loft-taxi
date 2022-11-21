@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
- import FormInput  from './compnents/forms/FormInput';
- import RegInput   from '../src/compnents/forms/RegInput';
 import MapsComp from './compnents/maps/MapsComp';
 import InputComponent from './pages/input/input'
 import './App.css';
