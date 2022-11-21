@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react'
+ import FormInput  from './compnents/forms/FormInput';
+ import RegInput   from '../src/compnents/forms/RegInput';
+import MapsComp from './compnents/maps/MapsComp';
+import InputComponent from './pages/input/input'
 import './App.css';
+import './pages/input/inputStyle.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default function App () {
+
+   const [login, setLogin] = useState(false)
+   
+
+  
+    return (
+      <div>
+        {login ? <MapsComp /> : <InputComponent setLogin={setLogin} /> } 
+      </div>
+    )
 }
 
-export default App;
+
+  
