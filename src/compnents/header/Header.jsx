@@ -12,9 +12,9 @@ export default function Header({ setLogin }) {
               <img src={HeaderLogo} alt="Header Logo"></img>
             </div>           
             <div>
-                <button  onClick={() => setLogin(true)}>Карта</button>
-                <button  onClick={() => setLogin(true)}>Профиль</button>
-                <button  onClick={() => setLogin(true)}>Выйти</button>
+                <button  onClick={() => {}}>Карта</button>
+                <button  onClick={() => {}}>Профиль</button>
+                <button  onClick={() => setLogin(false)}>Выйти</button>
             </div>
         </div>
     </div>

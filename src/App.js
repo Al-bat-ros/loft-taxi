@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import MapsComp from './pages/maps/MapsComp';
-import InputComponent from './pages/input/input'
+import MapsPage from './pages/maps/MapsPage';
+import AuthPage from './pages/AuthPages/AuthPage'
 import './App.css';
-import './pages/input/inputStyle.css';
+import './pages/AuthPages/inputStyle.css';
 
 
 
@@ -14,7 +14,7 @@ export default function App () {
   
     return (
       <div>
-        {login ? <MapsComp /> : <InputComponent setLogin={setLogin} /> } 
+        {login ? <MapsPage /> : <AuthPage setLogin={setLogin} /> } 
       </div>
     )
 }
