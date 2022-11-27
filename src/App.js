@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import MapsPage from './pages/maps/MapsPage';
-import AuthPage from './pages/AuthPages/AuthPage'
+import { AuthPage, MapsPage } from './pages';
+
 import './App.css';
-import './pages/AuthPages/inputStyle.css';
+//import './pages/AuthPages/AuthPageStyle.css';
 
 
 
@@ -14,7 +14,7 @@ export default function App () {
   
     return (
       <div>
-        {login ? <MapsPage /> : <AuthPage setLogin={setLogin} /> } 
+        {login ? <MapsPage setLogin={setLogin}  /> : <AuthPage setLogin={setLogin} /> } 
       </div>
     )
 }

@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
-import  FormInput  from '../../compnents/forms/formInput/FormInput';
-import  RegInput  from '../../compnents/forms/regInput/RegInput' ;
-// import MapsComp from '../maps/MapsComp'
-
-
+import React, { useState, useEffect } from 'react';
+import { FormInput, FormReg } from '../../compnents'
 import logo from '../../assets/images/logo.svg';
-import './inputStyle.css';
+import './AuthPageStyle.css';
 
 
 
@@ -13,7 +9,9 @@ export default function AuthPages({ setLogin }){
 
     const [routeReg, setRouteReg] = useState(false);
     
-    
+    // useEffect (() => {
+    //     console.log(routeReg)
+    // },[])
     
     return (
         <div className="input-page">
@@ -25,7 +23,7 @@ export default function AuthPages({ setLogin }){
                 </div>
             </header>
             
-            {routeReg ? <RegInput setRouteReg={setRouteReg} /> : <FormInput setLogin={setLogin} setRouteReg={setRouteReg}  /> }
+            {routeReg ? <FormReg setRouteReg={setRouteReg} /> : <FormInput setLogin={setLogin} setRouteReg={setRouteReg}  /> }
             
         </div>        
     )       

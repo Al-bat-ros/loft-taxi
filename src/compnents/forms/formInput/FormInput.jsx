@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 
 export default function FormInput({ setLogin, setRouteReg }){
-    
 
     return (
         <div className="form-input">

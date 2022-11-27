@@ -1,12 +1,25 @@
-import React from 'react'
-import Header from '../../compnents/header/Header'
+import React, { useState, useEffect } from 'react'
+import {Header, FormOrder, FormProfileCard } from '../../compnents'
 
-export default function MapsComp() {
+import './mapStyle.css'
+
+export default function MapsComp({ setLogin}) {
+
+
+  const [routeModals, setRouteModal ] = useState('formOrder')
+
+  const modals = {
+    formOrder: <FormOrder />,
+    formProfileCard: <FormProfileCard />
+  }
+
+
   return (
-    
+  
     <div>
-      <Header />
-      <h1>Здесь будет карта</h1>
-      </div>
+      <Header setRouteModal={setRouteModal} setLogin={setLogin}/>
+      {modals[routeModals]}
+    </div>
   )
+
 }
