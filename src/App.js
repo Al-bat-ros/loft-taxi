@@ -1,23 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { AuthPage, MapsPage } from './pages';
-
+import { AuthContext } from './context/AuthContext'
 import './App.css';
-//import './pages/AuthPages/AuthPageStyle.css';
 
 
 
-export default function App () {
+ function App (props) {
 
-   const [login, setLogin] = useState(false)
+  //  const [login, setLogin] = useState(false)
+   const auth = useContext(AuthContext)
    
-
+   
+// useEffect(() => {
+// console.log(auth.isLogedIn)
+// },[])
   
     return (
       <div>
-        {login ? <MapsPage setLogin={setLogin}  /> : <AuthPage setLogin={setLogin} /> } 
+        {auth.isLogedIn ? <MapsPage   /> : <AuthPage  /> } 
       </div>
-    )
+    );
 }
 
+export default App;
 
   

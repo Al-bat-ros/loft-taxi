@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { FormInput, FormReg } from '../../compnents'
 import logo from '../../assets/images/logo.svg';
+import { AuthContext } from '../../context/AuthContext'
 import './AuthPageStyle.css';
 
 
@@ -8,11 +9,9 @@ import './AuthPageStyle.css';
 export default function AuthPages({ setLogin }){
 
     const [routeReg, setRouteReg] = useState(false);
-    
-    // useEffect (() => {
-    //     console.log(routeReg)
-    // },[])
-    
+    const auth = useContext(AuthContext)
+
+   
     return (
         <div className="input-page">
             <header className="Main-Header">

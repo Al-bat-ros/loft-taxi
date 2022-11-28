@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {Header, FormOrder, FormProfileCard } from '../../compnents'
+import {Header, FormOrder, FormProfileCard, Maps } from '../../compnents'
 
 import './mapStyle.css'
 
@@ -18,7 +18,9 @@ export default function MapsComp({ setLogin}) {
   
     <div>
       <Header setRouteModal={setRouteModal} setLogin={setLogin}/>
+      <Maps />
       {modals[routeModals]}
+      
     </div>
   )
 

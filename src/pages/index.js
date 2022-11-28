@@ -1,5 +1,6 @@
 import AuthPage from './AuthPages/AuthPage'
-import MapsPage from './Maps/MapsPage'
+import MapsPage from './MapPage/MapsPage'
+
 
 export {
     AuthPage, MapsPage
