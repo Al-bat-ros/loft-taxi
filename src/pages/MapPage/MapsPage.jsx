@@ -3,7 +3,7 @@ import {Header, FormOrder, FormProfileCard, Maps } from '../../compnents'
 
 import './mapStyle.css'
 
-export default function MapsComp({ setLogin}) {
+export default function MapsComp({}) {
 
 
   const [routeModals, setRouteModal ] = useState('formOrder')
@@ -17,7 +17,7 @@ export default function MapsComp({ setLogin}) {
   return (
   
     <div>
-      <Header setRouteModal={setRouteModal} setLogin={setLogin}/>
+      <Header setRouteModal={setRouteModal}/>
       <Maps />
       {modals[routeModals]}
       

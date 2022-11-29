@@ -7,7 +7,6 @@ export default function Maps(events) {
 
 
      useEffect(() => {
-    console.log(mapContainer)
        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NleWJhdCIsImEiOiJjbGIwNzV0djIweDFzM3FteGtzMW41aG01In0.q23aW-Gxw2IAYms-I4xrJw';
       const map = new mapboxgl.Map({
            container: mapContainer.current, // container ID

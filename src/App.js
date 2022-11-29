@@ -7,18 +7,19 @@ import './App.css';
 
  function App (props) {
 
-  //  const [login, setLogin] = useState(false)
    const auth = useContext(AuthContext)
    
    
-// useEffect(() => {
-// console.log(auth.isLogedIn)
-// },[])
+   useEffect(()=> {
+    console.log(props)
+   })
   
     return (
+      
       <div>
-        {auth.isLogedIn ? <MapsPage   /> : <AuthPage  /> } 
+        {auth.isLogedIn ? <MapsPage /> : <AuthPage /> } 
       </div>
+
     );
 }
 

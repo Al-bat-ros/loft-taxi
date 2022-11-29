@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function RegInput({setInput, setRouteReg}){
+export default function RegInput({ setRouteReg }){
     return (
         <div className="form-input">
             <div className="form-input-wrap">

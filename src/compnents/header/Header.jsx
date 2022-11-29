@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import logoHeader from '../../assets/images/logoHeader.svg';
+import { AuthContext } from '../../context/AuthContext';
 
 
 
-export default function Header({ setLogin, setRouteModal }) {
-//   useEffect (() => {
-//     console.log(setLogin)
-// },[])
+export default function Header({ setRouteModal }) {
+  const auth = useContext(AuthContext)
+  
+ 
   return (
     
     <div>
@@ -22,7 +23,7 @@ export default function Header({ setLogin, setRouteModal }) {
                   <button className="main-header_btn main-header-btn_profile" onClick={() => {setRouteModal("formProfileCard")}}>
                     <span className="main-header_lable">Профиль</span>
                   </button>
-                  <button className="main-header_btn main-header-btn_out" onClick={() => {setLogin(false)}}>
+                  <button className="main-header_btn main-header-btn_out" onClick={() => {auth.logOut(true)}}>
                     <span className="main-header_lable">Выйти</span>
                   </button>
               </div>
