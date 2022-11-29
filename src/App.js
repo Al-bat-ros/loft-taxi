@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react'
- import FormInput  from './compnents/forms/FormInput';
- import RegInput   from '../src/compnents/forms/RegInput';
-import MapsComp from './compnents/maps/MapsComp';
-import InputComponent from './pages/input/input'
+import React, { useState } from 'react'
+import { AuthPage, MapsPage } from './pages';
+
 import './App.css';
-import './pages/input/inputStyle.css';
+//import './pages/AuthPages/AuthPageStyle.css';
 
 
 
@@ -16,7 +14,7 @@ export default function App () {
   
     return (
       <div>
-        {login ? <MapsComp /> : <InputComponent setLogin={setLogin} /> } 
+        {login ? <MapsPage setLogin={setLogin}  /> : <AuthPage setLogin={setLogin} /> } 
       </div>
     )
 }
