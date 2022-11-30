@@ -18,6 +18,7 @@ import './App.css';
       
       <div>
         {auth.isLogedIn ? <MapsPage /> : <AuthPage /> } 
+      
       </div>
 
     );
